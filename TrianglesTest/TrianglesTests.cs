@@ -89,5 +89,21 @@ namespace TrianglesTest
 
            Assert.AreEqual(expectedAn, missingAngle);
        }
+
+        [TestMethod]
+        public void TestFindAngleInvalid()
+        {
+            double angle1 = -50.0;
+            double angle2 = -51.0;
+            double missingAngle = 0.0;
+            double expectedAn = 0;
+
+            missingAngle = Triangles.Triangles.FindAngle(angle1, angle2);
+
+            string convert = missingAngle.ToString("N2");
+            missingAngle = double.Parse(convert);
+
+            Assert.AreEqual(expectedAn, missingAngle);
+        }
     }
 }
