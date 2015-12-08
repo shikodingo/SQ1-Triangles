@@ -166,7 +166,7 @@ namespace TrianglesTest
             double area = 0.0;
             double expectedA = 0;
 
-           // Call the function
+           // Call the find area function
             area = Triangles.Triangles.FindArea(side1, side2);
 
            // Convert
