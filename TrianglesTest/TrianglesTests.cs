@@ -56,5 +56,22 @@ namespace TrianglesTest
 
             Assert.AreEqual(expectedA, area);
         }
+
+       [TestMethod]
+       public void TestFindAreaInvalid()
+        {
+            // Variables
+            double side1 = -5.0;
+            double side2 = -6.0;
+            double area = 0.0;
+            double expectedA = 0;
+
+            area = Triangles.Triangles.FindArea(side1, side2);
+
+            string convert = area.ToString("N2");
+            area = double.Parse(convert);
+
+            Assert.AreEqual(expectedA, area);
+        }
     }
 }
