@@ -40,5 +40,21 @@ namespace TrianglesTest
 
             Assert.AreEqual(expectedH, hypotenuse);
         }
+        [TestMethod]
+       public void TestFindAreaValid()
+        {
+            // Variables
+            double side1 = 5.0;
+            double side2 = 6.0;
+            double area = 0.0;
+            double expectedA = 7.81;
+
+            area = Triangles.Triangles.FindArea(side1, side2);
+
+            string convert = area.ToString("N2");
+            area = double.Parse(convert);
+
+            Assert.AreEqual(expectedA, area);
+        }
     }
 }
