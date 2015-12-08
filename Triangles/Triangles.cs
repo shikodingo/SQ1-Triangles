@@ -42,6 +42,22 @@ namespace Triangles
             return area;
         }
 
+        public static double FindAngle(double angle1, double angle2)
+        {
+            double angle = 0.0;
+
+            if((angle1 > 0) && angle2 > 0)
+            {
+                angle = 180 - (angle1 + angle2);
+                string.Format("{0:F2}", angle);
+            }
+            else
+            {
+                angle = 0;
+            }
+            return angle;
+        }
+
         // This function is modified from 
         //http://www.codecodex.com/wiki/Calculate_an_integer_square_root#C.23
         // Finds the integer square root of a positive number  
