@@ -87,6 +87,7 @@
             this.btnAngle.TabIndex = 36;
             this.btnAngle.Text = "Get Angle";
             this.btnAngle.UseVisualStyleBackColor = true;
+            this.btnAngle.Click += new System.EventHandler(this.btnAngle_Click);
             // 
             // btnArea
             // 
@@ -96,6 +97,7 @@
             this.btnArea.TabIndex = 35;
             this.btnArea.Text = "Get Area";
             this.btnArea.UseVisualStyleBackColor = true;
+            this.btnArea.Click += new System.EventHandler(this.btnArea_Click);
             // 
             // btnHypotenuse
             // 
@@ -105,6 +107,7 @@
             this.btnHypotenuse.TabIndex = 34;
             this.btnHypotenuse.Text = "Get Hypotenuse";
             this.btnHypotenuse.UseVisualStyleBackColor = true;
+            this.btnHypotenuse.Click += new System.EventHandler(this.btnHypotenuse_Click);
             // 
             // lblAngle3
             // 
