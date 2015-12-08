@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Triangles
 {
-    public partial class Form1 : Form
+    public partial class frmTriangle : Form
     {
-        public Form1()
+        public frmTriangle()
         {
             InitializeComponent();
         }
