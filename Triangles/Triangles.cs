@@ -25,6 +25,23 @@ namespace Triangles
             return hypotenuse;
         }
 
+        public static double FindArea(double side1, double side2)
+        {
+            double area = 0.0;
+
+            if((side1 > 0) && side2 > 0)
+            {
+                area = 0.5 * (side1 * side2);
+                string.Format("{0:F2}", area);
+            }
+            else
+            {
+                area = 0;
+            }
+
+            return area;
+        }
+
         // This function is modified from 
         //http://www.codecodex.com/wiki/Calculate_an_integer_square_root#C.23
         // Finds the integer square root of a positive number  
