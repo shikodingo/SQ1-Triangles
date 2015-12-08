@@ -12,10 +12,16 @@ namespace Triangles
         {
             double hypotenuse = 0.0;
 
-            hypotenuse = ((side1 * side1) + (side2 * side2));
-            hypotenuse = Isqrt(hypotenuse);
-            string.Format("{0:F2}", hypotenuse);
-
+            if ((side1 > 0) && side2 > 0)
+            {
+                hypotenuse = ((side1 * side1) + (side2 * side2));
+                hypotenuse = Isqrt(hypotenuse);
+                string.Format("{0:F2}", hypotenuse);
+            }
+            else
+            {
+                hypotenuse = 0;
+            }
             return hypotenuse;
         }
 

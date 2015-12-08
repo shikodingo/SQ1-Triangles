@@ -31,7 +31,7 @@ namespace TrianglesTest
             double side1 = -5.0;
             double side2 = -6.0;
             double hypotenuse = 0.0;
-            double expectedH = -7.81;
+            double expectedH = 0;
 
             hypotenuse = Triangles.Triangles.FindHypotenuse(side1, side2);
 
