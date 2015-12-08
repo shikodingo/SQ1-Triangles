@@ -11,6 +11,7 @@ namespace TrianglesTest
         [TestMethod]
         public void TestFindHypotenuseValid()
         {
+            // Variables
             double side1 = 5.0;
             double side2 = 6.0;
             double hypotenuse = 0.0;
