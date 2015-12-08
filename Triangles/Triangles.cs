@@ -10,10 +10,11 @@ namespace Triangles
     {
         public static double FindHypotenuse(double side1, double side2)
         {
-            double hypotenuse;
+            double hypotenuse = 0.0;
 
             hypotenuse = ((side1 * side1) + (side2 * side2));
             hypotenuse = Isqrt(hypotenuse);
+            string.Format("{0:F2}", hypotenuse);
 
             return hypotenuse;
         }
@@ -30,7 +31,8 @@ namespace Triangles
             {
                 n = n1;
                 n1 = (n + (num / n)) / 2;
-            } // end while  
+            } // end while
+            string.Format("{0:F2}", n);
             return n;
         } // end Isqrt() 
     }
