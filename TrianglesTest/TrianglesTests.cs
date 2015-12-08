@@ -47,7 +47,7 @@ namespace TrianglesTest
             double side1 = 5.0;
             double side2 = 6.0;
             double area = 0.0;
-            double expectedA = 7.81;
+            double expectedA = 15.0;
 
             area = Triangles.Triangles.FindArea(side1, side2);
 
